@@ -57,12 +57,6 @@ export const Container = styled.header`
     padding: 0;
   }
 
-  .clearfix {
-    clear: both;
-    content: '';
-    display: block;
-  }
-
   .inner-left {
     float: left;
     line-height: 30px;
@@ -73,5 +67,11 @@ export const Container = styled.header`
     float: right;
     line-height: 30px;
     position: relative;
+  }
+
+  .clearfix {
+    clear: both;
+    content: '';
+    display: block;
   }
 `;
