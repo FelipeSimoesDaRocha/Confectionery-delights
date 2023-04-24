@@ -1,7 +1,11 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
+// Styles
 import GlobalStyle from '../styles/globals';
+
+// Components
+import { Loading } from 'components/loading';
 
 function App({ Component, pageProps }: AppProps) {
   const siteTitle = 'Waiuru';
@@ -49,6 +53,7 @@ function App({ Component, pageProps }: AppProps) {
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script noModule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
       </Head>
+      <Loading />
       <Component {...pageProps} />
       <GlobalStyle />
     </>
