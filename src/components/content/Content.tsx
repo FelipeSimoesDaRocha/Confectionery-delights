@@ -1,3 +1,41 @@
+import Image from 'next/image';
+
+import aboutAbsImage from '../../assets/images/about-abs-image.jpg';
+import aboutBanner from '../../assets/images/about-banner.jpg';
+import badge1 from '../../assets/images/badge-1.png';
+import badge2 from "../../assets/images/badge-2.png";
+import event1 from '../../assets/images/event-1.jpg';
+import event2 from '../../assets/images/event-2.jpg';
+import event3 from '../../assets/images/event-3.jpg';
+import featuresIcon1 from '../../assets/images/features-icon-1.png';
+import featuresIcon2 from '../../assets/images/features-icon-2.png';
+import featuresIcon3 from '../../assets/images/features-icon-3.png';
+import featuresIcon4 from '../../assets/images/features-icon-4.png';
+import heroIcon from '../../assets/images/hero-icon.png';
+import heroSlider1 from '../../assets/images/hero-slider-1.jpg';
+import heroSlider2 from '../../assets/images/hero-slider-2.jpg';
+import heroSlider3 from '../../assets/images/hero-slider-3.jpg';
+import menu1 from '../../assets/images/menu-1.png';
+import menu2 from '../../assets/images/menu-2.png';
+import menu3 from '../../assets/images/menu-3.png';
+import menu4 from '../../assets/images/menu-4.png';
+import menu5 from '../../assets/images/menu-5.png';
+import menu6 from '../../assets/images/menu-6.png';
+import service1 from '../../assets/images/service-1.jpg';
+import service2 from '../../assets/images/service-2.jpg';
+import service3 from '../../assets/images/service-3.jpg';
+import shape1 from '../../assets/images/shape-1.png';
+import shape2 from '../../assets/images/shape-2.png';
+import shape3 from '../../assets/images/shape-3.png';
+import shape4 from '../../assets/images/shape-4.png';
+import shape5 from '../../assets/images/shape-5.png';
+import shape6 from '../../assets/images/shape-5.png';
+import shape7 from '../../assets/images/shape-7.png';
+import shape8 from '../../assets/images/shape-8.png';
+import shape9 from '../../assets/images/shape-9.png';
+import specialDishBanner from '../../assets/images/special-dish-banner.jpg';
+import testiAvatar from '../../assets/images/testi-avatar.jpg';
+
 import * as S from './Content.styles';
 
 const Content = () => {
@@ -9,7 +47,7 @@ const Content = () => {
             <ul className="hero-slider" data-hero-slider>
               <li className="slider-item active" data-hero-slider-item>
                 <div className="slider-bg">
-                  <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" className="img-cover" />
+                  <Image src={heroSlider1} width="1880" height="950" alt="" className="img-cover" />
                 </div>
 
                 <p className="label-2 section-subtitle slider-reveal">Tradational & Hygine</p>
@@ -32,7 +70,7 @@ const Content = () => {
 
               <li className="slider-item" data-hero-slider-item>
                 <div className="slider-bg">
-                  <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" className="img-cover" />
+                  <Image src={heroSlider2} width="1880" height="950" alt="" className="img-cover" />
                 </div>
 
                 <p className="label-2 section-subtitle slider-reveal">delightful experience</p>
@@ -55,7 +93,7 @@ const Content = () => {
 
               <li className="slider-item" data-hero-slider-item>
                 <div className="slider-bg">
-                  <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" className="img-cover" />
+                  <Image src={heroSlider3} width="1880" height="950" alt="" className="img-cover" />
                 </div>
 
                 <p className="label-2 section-subtitle slider-reveal">amazing & delicious</p>
@@ -86,7 +124,7 @@ const Content = () => {
             </button>
 
             <a href="#" className="hero-btn has-after">
-              <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon" />
+              <Image src={heroIcon} width="48" height="48" alt="booking icon" />
 
               <span className="label-2 text-center span">Book A Table</span>
             </a>
@@ -108,8 +146,8 @@ const Content = () => {
                   <div className="service-card">
                     <a href="#" className="has-before hover:shine">
                       <figure className="card-banner img-holder" style={{ width: 285, height: 336 }}>
-                        <img
-                          src="./assets/images/service-1.jpg"
+                        <Image
+                          src={service1}
                           width="285"
                           height="336"
                           loading="lazy"
@@ -135,8 +173,8 @@ const Content = () => {
                   <div className="service-card">
                     <a href="#" className="has-before hover:shine">
                       <figure className="card-banner img-holder" style={{ width: 285, height: 336 }}>
-                        <img
-                          src="./assets/images/service-2.jpg"
+                        <Image
+                          src={service2}
                           width="285"
                           height="336"
                           loading="lazy"
@@ -162,8 +200,8 @@ const Content = () => {
                   <div className="service-card">
                     <a href="#" className="has-before hover:shine">
                       <figure className="card-banner img-holder" style={{ width: 285, height: 336 }}>
-                        <img
-                          src="./assets/images/service-3.jpg"
+                        <Image
+                          src={service3}
                           width="285"
                           height="336"
                           loading="lazy"
@@ -186,16 +224,16 @@ const Content = () => {
                 </li>
               </ul>
 
-              <img
-                src="./assets/images/shape-1.png"
+              <Image
+                src={shape1}
                 width="246"
                 height="412"
                 loading="lazy"
                 alt="shape"
                 className="shape shape-1 move-anim"
               />
-              <img
-                src="./assets/images/shape-2.png"
+              <Image
+                src={shape2}
                 width="343"
                 height="345"
                 loading="lazy"
@@ -237,8 +275,8 @@ const Content = () => {
               </div>
 
               <figure className="about-banner">
-                <img
-                  src="./assets/images/about-banner.jpg"
+                <Image
+                  src={aboutBanner}
                   width="570"
                   height="570"
                   loading="lazy"
@@ -249,29 +287,22 @@ const Content = () => {
                 />
 
                 <div className="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
-                  <img
-                    src="./assets/images/about-abs-image.jpg"
-                    width="285"
-                    height="285"
-                    loading="lazy"
-                    alt=""
-                    className="w-100"
-                  />
+                  <Image src={aboutAbsImage} width="285" height="285" loading="lazy" alt="" className="w-100" />
                 </div>
 
                 <div className="abs-img abs-img-2 has-before">
-                  <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="" />
+                  <Image src={badge2} width="133" height="134" loading="lazy" alt="" />
                 </div>
               </figure>
 
-              <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" className="shape" />
+              <Image src={shape3} width="197" height="194" loading="lazy" alt="" className="shape" />
             </div>
           </section>
 
           <section className="special-dish text-center" aria-labelledby="dish-label">
             <div className="special-dish-banner">
-              <img
-                src="./assets/images/special-dish-banner.jpg"
+              <Image
+                src={specialDishBanner}
                 width="940"
                 height="900"
                 loading="lazy"
@@ -282,14 +313,7 @@ const Content = () => {
 
             <div className="special-dish-content bg-black-10">
               <div className="container">
-                <img
-                  src="./assets/images/badge-1.png"
-                  width="28"
-                  height="41"
-                  loading="lazy"
-                  alt="badge"
-                  className="abs-img"
-                />
+                <Image src={badge1} width="28" height="41" loading="lazy" alt="badge" className="abs-img" />
 
                 <p className="section-subtitle label-2">Special Dish</p>
 
@@ -316,23 +340,9 @@ const Content = () => {
               </div>
             </div>
 
-            <img
-              src="./assets/images/shape-4.png"
-              width="179"
-              height="359"
-              loading="lazy"
-              alt=""
-              className="shape shape-1"
-            />
+            <Image src={shape4} width="179" height="359" loading="lazy" alt="" className="shape shape-1" />
 
-            <img
-              src="./assets/images/shape-9.png"
-              width="351"
-              height="462"
-              loading="lazy"
-              alt=""
-              className="shape shape-2"
-            />
+            <Image src={shape9} width="351" height="462" loading="lazy" alt="" className="shape shape-2" />
           </section>
 
           <section className="section menu" aria-label="menu-label" id="menu">
@@ -345,8 +355,8 @@ const Content = () => {
                 <li>
                   <div className="menu-card hover:card">
                     <figure className="card-banner img-holder" style={{ width: 100, height: 100 }}>
-                      <img
-                        src="./assets/images/menu-1.png"
+                      <Image
+                        src={menu1}
                         width="100"
                         height="100"
                         loading="lazy"
@@ -378,14 +388,7 @@ const Content = () => {
                 <li>
                   <div className="menu-card hover:card">
                     <figure className="card-banner img-holder" style={{ width: 100, height: 100 }}>
-                      <img
-                        src="./assets/images/menu-2.png"
-                        width="100"
-                        height="100"
-                        loading="lazy"
-                        alt="Lasagne"
-                        className="img-cover"
-                      />
+                      <Image src={menu2} width="100" height="100" loading="lazy" alt="Lasagne" className="img-cover" />
                     </figure>
 
                     <div>
@@ -409,8 +412,8 @@ const Content = () => {
                 <li>
                   <div className="menu-card hover:card">
                     <figure className="card-banner img-holder" style={{ width: 100, height: 100 }}>
-                      <img
-                        src="./assets/images/menu-3.png"
+                      <Image
+                        src={menu3}
                         width="100"
                         height="100"
                         loading="lazy"
@@ -440,8 +443,8 @@ const Content = () => {
                 <li>
                   <div className="menu-card hover:card">
                     <figure className="card-banner img-holder" style={{ width: 100, height: 100 }}>
-                      <img
-                        src="./assets/images/menu-4.png"
+                      <Image
+                        src={menu4}
                         width="100"
                         height="100"
                         loading="lazy"
@@ -473,8 +476,8 @@ const Content = () => {
                 <li>
                   <div className="menu-card hover:card">
                     <figure className="card-banner img-holder" style={{ width: 100, height: 100 }}>
-                      <img
-                        src="./assets/images/menu-5.png"
+                      <Image
+                        src={menu5}
                         width="100"
                         height="100"
                         loading="lazy"
@@ -504,14 +507,7 @@ const Content = () => {
                 <li>
                   <div className="menu-card hover:card">
                     <figure className="card-banner img-holder" style={{ width: 100, height: 100 }}>
-                      <img
-                        src="./assets/images/menu-6.png"
-                        width="100"
-                        height="100"
-                        loading="lazy"
-                        alt="Opu Fish"
-                        className="img-cover"
-                      />
+                      <Image src={menu6} width="100" height="100" loading="lazy" alt="Opu Fish" className="img-cover" />
                     </figure>
 
                     <div>
@@ -546,16 +542,16 @@ const Content = () => {
                 </span>
               </a>
 
-              <img
-                src="./assets/images/shape-5.png"
+              <Image
+                src={shape5}
                 width="921"
                 height="1036"
                 loading="lazy"
                 alt="shape"
                 className="shape shape-2 move-anim"
               />
-              <img
-                src="./assets/images/shape-6.png"
+              <Image
+                src={shape6}
                 width="343"
                 height="345"
                 loading="lazy"
@@ -585,14 +581,7 @@ const Content = () => {
               </div>
 
               <div className="profile">
-                <img
-                  src="./assets/images/testi-avatar.jpg"
-                  width="100"
-                  height="100"
-                  loading="lazy"
-                  alt="Sam Jhonson"
-                  className="img"
-                />
+                <Image src={testiAvatar} width="100" height="100" loading="lazy" alt="Sam Jhonson" className="img" />
 
                 <p className="label-2 profile-name">Sam Jhonson</p>
               </div>
@@ -734,13 +723,7 @@ const Content = () => {
                 <li className="feature-item">
                   <div className="feature-card">
                     <div className="card-icon">
-                      <img
-                        src="./assets/images/features-icon-1.png"
-                        width="100"
-                        height="80"
-                        loading="lazy"
-                        alt="icon"
-                      />
+                      <Image src={featuresIcon1} width="100" height="80" loading="lazy" alt="icon" />
                     </div>
 
                     <h3 className="title-2 card-title">Hygienic Food</h3>
@@ -752,13 +735,7 @@ const Content = () => {
                 <li className="feature-item">
                   <div className="feature-card">
                     <div className="card-icon">
-                      <img
-                        src="./assets/images/features-icon-2.png"
-                        width="100"
-                        height="80"
-                        loading="lazy"
-                        alt="icon"
-                      />
+                      <Image src={featuresIcon2} width="100" height="80" loading="lazy" alt="icon" />
                     </div>
 
                     <h3 className="title-2 card-title">Fresh Environment</h3>
@@ -770,13 +747,7 @@ const Content = () => {
                 <li className="feature-item">
                   <div className="feature-card">
                     <div className="card-icon">
-                      <img
-                        src="./assets/images/features-icon-3.png"
-                        width="100"
-                        height="80"
-                        loading="lazy"
-                        alt="icon"
-                      />
+                      <Image src={featuresIcon3} width="100" height="80" loading="lazy" alt="icon" />
                     </div>
 
                     <h3 className="title-2 card-title">Skilled Chefs</h3>
@@ -788,13 +759,7 @@ const Content = () => {
                 <li className="feature-item">
                   <div className="feature-card">
                     <div className="card-icon">
-                      <img
-                        src="./assets/images/features-icon-4.png"
-                        width="100"
-                        height="80"
-                        loading="lazy"
-                        alt="icon"
-                      />
+                      <Image src={featuresIcon4} width="100" height="80" loading="lazy" alt="icon" />
                     </div>
 
                     <h3 className="title-2 card-title">Event & Party</h3>
@@ -804,23 +769,9 @@ const Content = () => {
                 </li>
               </ul>
 
-              <img
-                src="./assets/images/shape-7.png"
-                width="208"
-                height="178"
-                loading="lazy"
-                alt="shape"
-                className="shape shape-1"
-              />
+              <Image src={shape7} width="208" height="178" loading="lazy" alt="shape" className="shape shape-1" />
 
-              <img
-                src="./assets/images/shape-8.png"
-                width="120"
-                height="115"
-                loading="lazy"
-                alt="shape"
-                className="shape shape-2"
-              />
+              <Image src={shape8} width="120" height="115" loading="lazy" alt="shape" className="shape shape-2" />
             </div>
           </section>
 
@@ -834,8 +785,8 @@ const Content = () => {
                 <li>
                   <div className="event-card has-before hover:shine">
                     <div className="card-banner img-holder" style={{ width: 350, height: 450 }}>
-                      <img
-                        src="./assets/images/event-1.jpg"
+                      <Image
+                        src={event1}
                         width="350"
                         height="450"
                         loading="lazy"
@@ -861,8 +812,8 @@ const Content = () => {
                 <li>
                   <div className="event-card has-before hover:shine">
                     <div className="card-banner img-holder" style={{ width: 350, height: 450 }}>
-                      <img
-                        src="./assets/images/event-2.jpg"
+                      <Image
+                        src={event2}
                         width="350"
                         height="450"
                         loading="lazy"
@@ -888,8 +839,8 @@ const Content = () => {
                 <li>
                   <div className="event-card has-before hover:shine">
                     <div className="card-banner img-holder" style={{ width: 350, height: 450 }}>
-                      <img
-                        src="./assets/images/event-3.jpg"
+                      <Image
+                        src={event3}
                         width="350"
                         height="450"
                         loading="lazy"

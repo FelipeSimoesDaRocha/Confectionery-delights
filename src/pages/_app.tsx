@@ -8,8 +8,8 @@ import GlobalStyle from '../styles/globals';
 import { Loading } from 'components/loading';
 
 function App({ Component, pageProps }: AppProps) {
-  const siteTitle = 'Waiuru';
-  const siteDescription = 'Waiuru app';
+  const siteTitle = 'Delicias da Confeitaria';
+  const siteDescription = 'Delicias da Confeitaria';
 
   return (
     <>
@@ -39,10 +39,10 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
 
-        <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg" />
-        <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg" />
-        <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg" />
-
+        <link rel="preload" as="image" href="../assets/images/hero-slider-1.jpg" />
+        <link rel="preload" as="image" href="../assets/images/hero-slider-2.jpg" />
+        <link rel="preload" as="image" href="../assets/images/hero-slider-3.jpg" />
+        
         <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5" />
         <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
