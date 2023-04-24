@@ -3,7 +3,7 @@ import Image from 'next/image';
 import aboutAbsImage from '../../assets/images/about-abs-image.jpg';
 import aboutBanner from '../../assets/images/about-banner.jpg';
 import badge1 from '../../assets/images/badge-1.png';
-import badge2 from "../../assets/images/badge-2.png";
+import badge2 from '../../assets/images/badge-2.png';
 import event1 from '../../assets/images/event-1.jpg';
 import event2 from '../../assets/images/event-2.jpg';
 import event3 from '../../assets/images/event-3.jpg';

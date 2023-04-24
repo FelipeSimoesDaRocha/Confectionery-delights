@@ -1,3 +1,7 @@
+import Image from 'next/image';
+
+import logo from '../../assets/images/logo.svg';
+
 import * as S from './Header.styles';
 
 const Header = () => {
@@ -37,7 +41,7 @@ const Header = () => {
       <header className="header" data-header>
         <div className="container">
           <a href="#" className="logo">
-            <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home" />
+            <Image src={logo} width="160" height="50" alt="Grilli - Home" />
           </a>
 
           <nav className="navbar" data-navbar>
@@ -46,7 +50,7 @@ const Header = () => {
             </button>
 
             <a href="#" className="logo">
-              <img src="./assets/images/logo.svg" width="160" height="50" alt="Grilli - Home" />
+              <Image src={logo} width="160" height="50" alt="Grilli - Home" />
             </a>
 
             <ul className="navbar-list">

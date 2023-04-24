@@ -1,4 +1,7 @@
+import Image from 'next/image';
+
 import img from '../../assets/images/footer-bg.jpg';
+import logo from '../../assets/images/logo.svg';
 
 import * as S from './Footer.styles';
 
@@ -9,7 +12,7 @@ const Footer = () => {
         <div className="footer-top grid-list">
           <div className="footer-brand has-before has-after">
             <a href="#" className="logo">
-              <img src="./assets/images/logo.svg" width="160" height="50" loading="lazy" alt="grilli home" />
+              <Image src={logo} width="160" height="50" loading="lazy" alt="grilli home" />
             </a>
 
             <address className="body-4">Restaurant St, Delicious City, London 9578, UK</address>
