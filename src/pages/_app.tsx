@@ -5,16 +5,9 @@ import Head from 'next/head';
 // Styles
 import GlobalStyle from '../styles/globals';
 
-// Components
-import { ComponentWrapper } from 'components/componentWrapper';
 import { Loading } from 'components/loading';
 
-export interface CustomAppProps extends Omit<AppProps, 'Component'> {
-  Component: AppProps['Component'];
-  dehydratedState: unknown;
-}
-
-function App(props: CustomAppProps) {
+function App({ Component, pageProps }: AppProps) {
   const siteTitle = 'Delicias da Confeitaria';
   const siteDescription = 'Delicias da Confeitaria';
 
@@ -61,7 +54,7 @@ function App(props: CustomAppProps) {
         <script noModule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
       </Head>
       <Loading />
-      <ComponentWrapper {...props} />
+      <Component {...pageProps} />;
       <GlobalStyle />
     </>
   );
