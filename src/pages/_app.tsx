@@ -2,17 +2,12 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
-// React
-import { QueryClientProvider, Hydrate } from 'react-query';
-
 // Styles
 import GlobalStyle from '../styles/globals';
 
 // Components
 import { ComponentWrapper } from 'components/componentWrapper';
 import { Loading } from 'components/loading';
-
-import { queryClient } from 'utils/querryClient';
 
 export interface CustomAppProps extends Omit<AppProps, 'Component'> {
   Component: AppProps['Component'];
