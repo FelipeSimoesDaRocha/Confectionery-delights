@@ -691,8 +691,8 @@ const Content = () => {
                   <p className="contact-label">Location</p>
 
                   <address className="body-4">
-                    Restaurant St, Delicious City, <br />
-                    London 9578, UK
+                    Delicias da confeitaria, <br />
+                    Blumenau
                   </address>
 
                   <p className="contact-label">Lunch Time</p>

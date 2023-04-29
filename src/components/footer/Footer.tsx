@@ -15,10 +15,10 @@ const Footer = () => {
               <Image src={logo} width="160" height="50" loading="lazy" alt="grilli home" />
             </a>
 
-            <address className="body-4">Restaurant St, Delicious City, London 9578, UK</address>
+            <address className="body-4">Rua george fridrich mordhorst, 210</address>
 
-            <a href="mailto:booking@grilli.com" className="body-4 contact-link">
-              booking@grilli.com
+            <a href="mailto:deliciasDaConfeitaria@gmail.com" className="body-4 contact-link">
+              deliciasDaConfeitaria@gmail.com
             </a>
 
             <a href="tel:+88123123456" className="body-4 contact-link">
@@ -128,9 +128,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p className="copyright">
-            &copy; 2022 Grilli. All Rights Reserved
-          </p>
+          <p className="copyright">&copy; 2022 Grilli. All Rights Reserved</p>
         </div>
       </div>
     </S.Footer>

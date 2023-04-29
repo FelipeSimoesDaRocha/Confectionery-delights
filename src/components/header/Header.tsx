@@ -11,7 +11,7 @@ const Header = () => {
         <div className="container">
           <address className="topbar-item">
             <div className="icon">{/* <ion-icon name="location-outline" aria-hidden="true"></ion-icon> */}</div>
-            <span className="span">Restaurant St, Delicious City, London 9578, UK</span>
+            <span className="span">Rua george fridrich mordhorst, 210</span>
           </address>
 
           <div className="separator"></div>
@@ -30,10 +30,10 @@ const Header = () => {
 
           <div className="separator"></div>
 
-          <a href="mailto:booking@restaurant.com" className="topbar-item link">
+          <a href="mailto:deliciasDaConfeitaria@gmail.com" className="topbar-item link">
             <div className="icon">{/* <ion-icon name="mail-outline" aria-hidden="true"></ion-icon> */}</div>
 
-            <span className="span">booking@restaurant.com</span>
+            <span className="span">DeliciasDaConfeitaria@gmail.com</span>
           </a>
         </div>
       </div>
@@ -99,14 +99,14 @@ const Header = () => {
               <p className="headline-1 navbar-title">Visit Us</p>
 
               <address className="body-4">
-                Restaurant St, Delicious City, <br />
+                Delicias da confeitaria, <br />
                 London 9578, UK
               </address>
 
               <p className="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
 
-              <a href="mailto:booking@grilli.com" className="body-4 sidebar-link">
-                booking@grilli.com
+              <a href="mailto:DeliciasDaConfeitaria@gmail.com" className="body-4 sidebar-link">
+                DeliciasDaConfeitaria@gmail.com
               </a>
 
               <div className="separator"></div>

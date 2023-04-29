@@ -15,10 +15,12 @@
     ]
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env NODE_ENV=development && next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint --fix",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.29.5",
