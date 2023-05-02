@@ -1,7 +1,12 @@
 {
-  "name": "my-app",
+  "name": "confectionery-delights",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "index.js",
+  "author": "Felipe Simoes Da Rocha",
+  "description": "Landing-Page Confectionery-Delights",
+  "repository": "https://github.com/FelipeSimoesDaRocha/Ulf-Tech",
+  "license": "MIT",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -19,7 +24,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
-    "test": "jest",
+    "test": "jest --coverage",
     "test:watch": "jest --watch"
   },
   "dependencies": {
@@ -68,9 +73,5 @@
     "lint-staged": "^13.2.1",
     "prettier": "^2.8.7",
     "webpack": "^5.77.0"
-  },
-  "main": "",
-  "repository": "",
-  "author": "",
-  "license": "MIT"
+  }
 }

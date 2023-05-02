@@ -44,7 +44,6 @@
           "/images/",
           "/styles/",
           "/models/",
-          "/^formik/",
           "/^modules/",
           "/^components/",
           "/^hooks/",
