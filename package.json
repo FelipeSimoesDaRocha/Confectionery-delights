@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "Felipe Simoes Da Rocha",
   "description": "Landing-Page Confectionery-Delights",
-  "repository": "https://github.com/FelipeSimoesDaRocha/Ulf-Tech",
+  "repository": "https://github.com/FelipeSimoesDaRocha/Confectionery-delights",
   "license": "MIT",
   "husky": {
     "hooks": {
