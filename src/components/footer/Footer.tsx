@@ -77,13 +77,7 @@ const Footer = () => {
 
             <li>
               <a href="#" className="label-2 footer-link hover-underline">
-                About Us
-              </a>
-            </li>
-
-            <li>
-              <a href="#" className="label-2 footer-link hover-underline">
-                Our Chefs
+                Chefs
               </a>
             </li>
 
@@ -104,12 +98,6 @@ const Footer = () => {
             <li>
               <a href="#" className="label-2 footer-link hover-underline">
                 Instagram
-              </a>
-            </li>
-
-            <li>
-              <a href="#" className="label-2 footer-link hover-underline">
-                Twitter
               </a>
             </li>
 

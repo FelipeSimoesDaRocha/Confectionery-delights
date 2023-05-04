@@ -34,7 +34,6 @@ import shape7 from '../../assets/images/shape-7.png';
 import shape8 from '../../assets/images/shape-8.png';
 import shape9 from '../../assets/images/shape-9.png';
 import specialDishBanner from '../../assets/images/special-dish-banner.jpg';
-import testiAvatar from '../../assets/images/testi-avatar.jpg';
 
 import * as S from './Content.styles';
 
@@ -529,14 +528,8 @@ const Content = () => {
                 </li>
               </ul>
 
-              <p className="menu-text text-center">
-                During winter daily from <span className="span">7:00 pm</span> to
-                <span className="span">9:00 pm</span>
-              </p>
-
               <a href="#" className="btn btn-primary">
                 <span className="text text-1">View All Menu</span>
-
                 <span className="text text-2" aria-hidden="true">
                   View All Menu
                 </span>
@@ -581,8 +574,6 @@ const Content = () => {
               </div>
 
               <div className="profile">
-                <Image src={testiAvatar} width="100" height="100" loading="lazy" alt="Sam Jhonson" className="img" />
-
                 <p className="label-2 profile-name">Sam Jhonson</p>
               </div>
             </div>
@@ -592,23 +583,23 @@ const Content = () => {
             <div className="container">
               <div className="form reservation-form bg-black-10">
                 <form action="" className="form-left">
-                  <h2 className="headline-1 text-center">Online Reservation</h2>
+                  <h2 className="headline-1 text-center">Reserva on-line</h2>
 
                   <p className="form-text text-center">
-                    Booking request
+                    Pedido de reserva
                     <a href="tel:+88123123456" className="link">
-                      +88-123-123456
+                      +55 47 9107-5411
                     </a>
-                    or fill out the order form
+                    ou preencha o formulário de encomenda
                   </p>
 
                   <div className="input-wrapper">
-                    <input type="text" name="name" placeholder="Your Name" autoComplete="off" className="input-field" />
+                    <input type="text" name="name" placeholder="Seu nome" autoComplete="off" className="input-field" />
 
                     <input
                       type="tel"
                       name="phone"
-                      placeholder="Phone Number"
+                      placeholder="Número de telefone"
                       autoComplete="off"
                       className="input-field"
                     />
@@ -619,13 +610,13 @@ const Content = () => {
                       {/* <ion-icon name="person-outline" aria-hidden="true"></ion-icon> */}
 
                       <select name="person" className="input-field">
-                        <option value="1-person">1 Person</option>
-                        <option value="2-person">2 Person</option>
-                        <option value="3-person">3 Person</option>
-                        <option value="4-person">4 Person</option>
-                        <option value="5-person">5 Person</option>
-                        <option value="6-person">6 Person</option>
-                        <option value="7-person">7 Person</option>
+                        <option value="1-person">1 Pessoa</option>
+                        <option value="2-person">2 Pessoa</option>
+                        <option value="3-person">3 Pessoa</option>
+                        <option value="4-person">4 Pessoa</option>
+                        <option value="5-person">5 Pessoa</option>
+                        <option value="6-person">6 Pessoa</option>
+                        <option value="7-person">7 Pessoa</option>
                       </select>
 
                       {/* <ion-icon name="chevron-down" aria-hidden="true"></ion-icon> */}
@@ -663,13 +654,13 @@ const Content = () => {
                     </div>
                   </div>
 
-                  <textarea name="message" placeholder="Message" autoComplete="off" className="input-field"></textarea>
+                  <textarea name="message" placeholder="Mensagem" autoComplete="off" className="input-field"></textarea>
 
                   <button type="submit" className="btn btn-secondary">
-                    <span className="text text-1">Book A Table</span>
+                    <span className="text text-1">Enviar</span>
 
                     <span className="text text-2" aria-hidden="true">
-                      Book A Table
+                      Enviar
                     </span>
                   </button>
                 </form>
@@ -678,7 +669,7 @@ const Content = () => {
                   className="form-right text-center"
                   style={{ backgroundImage: "url('./assets/images/form-pattern.png')" }}
                 >
-                  <h2 className="headline-1 text-center">Contact Us</h2>
+                  <h2 className="headline-1 text-center">Contate-nos</h2>
 
                   <p className="contact-label">Booking Request</p>
 

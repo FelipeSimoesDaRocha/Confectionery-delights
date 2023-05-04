@@ -19,13 +19,13 @@ const Header = () => {
           <div className="topbar-item item-2">
             <div className="icon">{/* <ion-icon name="time-outline" aria-hidden="true"></ion-icon> */}</div>
 
-            <span className="span">Daily : 8.00 am to 10.00 pm</span>
+            <span className="span">Aberto : 8.00 am 10.00 pm</span>
           </div>
 
           <a href="tel:+11234567890" className="topbar-item link">
             <div className="icon">{/* <ion-icon name="call-outline" aria-hidden="true"></ion-icon> */}</div>
 
-            <span className="span">+1 123 456 7890</span>
+            <span className="span">+55 47 9107-5411</span>
           </a>
 
           <div className="separator"></div>

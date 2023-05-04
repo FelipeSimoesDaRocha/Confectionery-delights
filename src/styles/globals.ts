@@ -230,11 +230,7 @@ opacity: 1;
 }
 .contact-number::after {bottom: -5px;}
 .text-center {text-align: center;}
-.img-cover {
-width: 100%;
-height: 100%;
-object-fit: cover;
-}
+
 .section-subtitle {
 position: relative;
 color: var(--gold-crayola);
@@ -781,10 +777,6 @@ margin-block: 10px;
 color: var(--quick-silver);
 line-height: var(--lineHeight-4);
 }
-.menu-text .span {
-display: inline-block;
-color: var(--gold-crayola);
-}
 .menu .btn {
 margin-inline: auto;
 margin-block-start: 26px;
@@ -819,7 +811,7 @@ gap: 2px;
 margin-block: 40px 50px;
 }
 .testi .separator { animation: rotate360 15s linear infinite; }
-.profile .img {
+.profile {
 margin-inline: auto;
 border-radius: var(--radius-circle);
 margin-block-end: 15px;
