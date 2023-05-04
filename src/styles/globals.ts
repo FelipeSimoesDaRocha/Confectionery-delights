@@ -798,7 +798,6 @@ right: 0;
 padding-block-end: 340px;
 position: static;
 }
-font-family: var(--fontFamily-forum);
 
 .testi .wrapper {
 display: flex;
