@@ -1,7 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /** @type {import('next').NextConfig} */
-const withOffline = require('next-offline');
-
 const nextConfig = {
   reactStrictMode: true,
   webpack(cfg) {
@@ -10,4 +8,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withOffline(nextConfig);
+module.exports = nextConfig;
