@@ -47,8 +47,8 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
 
-        <meta name="title" content="Grilli - Amazing & Delicious Food" />
-        <meta name="description" content="This is a Restaurant html template made by codewithsadee" />
+        <meta name="title" content="Delicias da confeitaria" />
+        <meta name="description" content="Delicias da confeitaria" />
 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script noModule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

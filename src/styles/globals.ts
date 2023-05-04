@@ -34,7 +34,6 @@ const Global = createGlobalStyle`
 /* font-size */
 --fontSize-display-1: calc(1.3rem + 6.7vw);
 --fontSize-headline-1: calc(2rem + 2.5vw);
---fontSize-headline-2: calc(1.3rem + 2.4vw);
 --fontSize-title-1: calc(1.6rem + 1.2vw);
 --fontSize-title-2: 2.2rem;
 --fontSize-title-3: 2.1rem;
@@ -158,7 +157,6 @@ body.nav-active { overflow: hidden; }
 /* #TYPOGRAPHY */
 .display-1,
 .headline-1,
-.headline-2,
 .title-1,
 .title-2,
 .title-3,
@@ -173,10 +171,6 @@ font-size: var(--fontSize-display-1);
 line-height: var(--lineHeight-1);
 }
 .headline-1 {font-size: var(--fontSize-headline-1);}
-.headline-2 {
-font-size: var(--fontSize-headline-2);
-line-height: var(--lineHeight-6);
-}
 .title-1 {font-size: var(--fontSize-title-1);}
 .title-2 {font-size: var(--fontSize-title-2);}
 .title-3 {font-size: var(--fontSize-title-3);}
@@ -238,6 +232,11 @@ font-weight: var(--weight-bold);
 text-transform: uppercase;
 letter-spacing: var(--letterSpacing-2);
 margin-block-end: 12px;
+}
+.img-cover {
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 .section-subtitle::after {
 content: url('../images/separator.svg');
@@ -694,7 +693,7 @@ left: 0;
 width: 150px;
 padding-block: 50px;
 }
-.about .abs-img-2 {
+.about {
 top: -65px;
 right: 0;
 overflow: hidden;
@@ -799,24 +798,15 @@ right: 0;
 padding-block-end: 340px;
 position: static;
 }
-.testi .quote {
-font-size: 7rem;
 font-family: var(--fontFamily-forum);
-line-height: 0.7em;
-}
+
 .testi .wrapper {
 display: flex;
 justify-content: center;
 gap: 2px;
-margin-block: 40px 50px;
 }
 .testi .separator { animation: rotate360 15s linear infinite; }
-.profile {
-margin-inline: auto;
-border-radius: var(--radius-circle);
-margin-block-end: 15px;
-}
-.testi .profile-name {
+.testi {
 color: var(--gold-crayola);
 font-weight: var(--weight-bold);
 text-transform: uppercase;
@@ -1178,12 +1168,6 @@ top: 0;
 left: 50%;
 height: 100%;
 border-inline-start: 1px solid var(--white-alpha-20);
-}
-
-/* TESTIMONIALS */
-.testi-text {
-max-width: 910px;
-margin-inline: auto;
 }
 
 /* RESERVATION */

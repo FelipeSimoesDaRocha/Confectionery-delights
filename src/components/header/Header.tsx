@@ -40,9 +40,7 @@ const Header = () => {
 
       <header className="header" data-header>
         <div className="container">
-          <a href="#" className="logo">
-            <Image src={logo} width="160" height="50" alt="Grilli - Home" />
-          </a>
+          <a href="#" className="logo"></a>
 
           <nav className="navbar" data-navbar>
             <button className="close-btn" aria-label="close menu" data-nav-toggler>
@@ -50,7 +48,7 @@ const Header = () => {
             </button>
 
             <a href="#" className="logo">
-              <Image src={logo} width="160" height="50" alt="Grilli - Home" />
+              <Image src={logo} width="160" height="50" alt="logo - Home" />
             </a>
 
             <ul className="navbar-list">
@@ -100,7 +98,7 @@ const Header = () => {
 
               <address className="body-4">
                 Delicias da confeitaria, <br />
-                London 9578, UK
+                Bluemanu 89062-220 , SC
               </address>
 
               <p className="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
@@ -113,19 +111,19 @@ const Header = () => {
 
               <p className="contact-label">Booking Request</p>
 
-              <a href="tel:+88123123456" className="body-1 contact-number hover-underline">
-                +88-123-123456
+              <a href="tel:+554791075411" className="body-1 contact-number hover-underline">
+                +55 47 9107-5411
               </a>
             </div>
           </nav>
 
-          <a href="#" className="btn btn-secondary">
+          {/* <a href="#" className="btn btn-secondary">
             <span className="text text-1">Find A Table</span>
 
             <span className="text text-2" aria-hidden="true">
               Find A Table
             </span>
-          </a>
+          </a> */}
 
           <button className="nav-open-btn" aria-label="open menu" data-nav-toggler>
             <span className="line line-1"></span>

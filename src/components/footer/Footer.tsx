@@ -11,9 +11,9 @@ const Footer = () => {
       <div className="container">
         <div className="footer-top grid-list">
           <div className="footer-brand has-before has-after">
-            <a href="#" className="logo">
+            {/* <a href="#" className="logo">
               <Image src={logo} width="160" height="50" loading="lazy" alt="grilli home" />
-            </a>
+            </a> */}
 
             <address className="body-4">Rua george fridrich mordhorst, 210</address>
 
@@ -21,11 +21,11 @@ const Footer = () => {
               deliciasDaConfeitaria@gmail.com
             </a>
 
-            <a href="tel:+88123123456" className="body-4 contact-link">
-              Booking Request : +88-123-123456
+            <a href="tel:+554791075411" className="body-4 contact-link">
+              Fazer pedido : +55 47 9107-5411
             </a>
 
-            <p className="body-4">Open : 09:00 am - 01:00 pm</p>
+            <p className="body-4">Aberto: 8h00 - 22h00</p>
 
             <div className="wrapper">
               <div className="separator"></div>
@@ -33,10 +33,10 @@ const Footer = () => {
               <div className="separator"></div>
             </div>
 
-            <p className="title-1">Get News & Offers</p>
+            <p className="title-1">Receba notícias e ofertas</p>
 
             <p className="label-1">
-              Subscribe us & Get <span className="span">25% Off.</span>
+              Inscreva-se e ganhe <span className="span">25% de desconto.</span>
             </p>
 
             <form action="" className="input-wrapper">
@@ -53,10 +53,10 @@ const Footer = () => {
               </div>
 
               <button type="submit" className="btn btn-secondary">
-                <span className="text text-1">Subscribe</span>
+                <span className="text text-1">Se inscrever</span>
 
                 <span className="text text-2" aria-hidden="true">
-                  Subscribe
+                  Se inscrever
                 </span>
               </button>
             </form>
@@ -83,7 +83,7 @@ const Footer = () => {
 
             <li>
               <a href="#" className="label-2 footer-link hover-underline">
-                Contact
+                Contato
               </a>
             </li>
           </ul>
@@ -109,14 +109,14 @@ const Footer = () => {
 
             <li>
               <a href="#" className="label-2 footer-link hover-underline">
-                Google Map
+                MAPA DO GOOGLE
               </a>
             </li>
           </ul>
         </div>
 
         <div className="footer-bottom">
-          <p className="copyright">&copy; 2022 Grilli. All Rights Reserved</p>
+          <p className="copyright">&copy; 2022 Delicias Da Confeitaria. Todos os direitos reservados</p>
         </div>
       </div>
     </S.Footer>
