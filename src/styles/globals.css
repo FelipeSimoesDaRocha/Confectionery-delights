@@ -1029,6 +1029,7 @@ textarea.input-field {
   width: 100%;
 }
 .form-right {
+  background-image: url('../assets/images/form-pattern.png');
   background-repeat: repeat;
   background-position: top left;
 }
@@ -1265,6 +1266,10 @@ textarea.input-field {
   }
 
   /* FOOTER */
+  .footer {
+    background-image: url('../assets/images/footer-bg.jpg');
+  }
+
   .footer-brand > * {
     max-width: 460px;
     margin-inline: auto;

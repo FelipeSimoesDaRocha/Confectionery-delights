@@ -6,7 +6,7 @@ const Header = () => {
       href: '#home',
     },
     {
-      title: 'Menus',
+      title: 'Menu',
       active: '',
       href: '#menu',
     },

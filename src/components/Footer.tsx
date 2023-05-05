@@ -1,8 +1,6 @@
-import img from '../../assets/images/footer-bg.jpg';
-
 const Footer = () => {
   return (
-    <div className="footer section has-bg-image text-center" style={{ backgroundImage: `url(${img})` }}>
+    <div className="footer section has-bg-image text-center">
       <div className="container">
         <div className="footer-top grid-list">
           <div className="footer-brand has-before has-after">
@@ -62,7 +60,7 @@ const Footer = () => {
 
             <li>
               <a href="#" className="label-2 footer-link hover-underline">
-                Menus
+                Menu
               </a>
             </li>
 

@@ -2,16 +2,13 @@ import { useEffect } from 'react';
 
 const Loading = () => {
   useEffect(() => {
-    const preloader: Element | null = document.querySelector('[data-preaload]');
-
-    if (preloader) {
-      preloader.classList.add('loaded');
-    }
+    const preloader = document.querySelector('[data-preload]');
+    preloader?.classList.add('loaded');
     document.body.classList.add('loaded');
   }, []);
 
   return (
-    <div className="preload" data-preaload>
+    <div className="preload" data-preload>
       <div className="circle"></div>
       <p className="text">Confeitaria</p>
     </div>

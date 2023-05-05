@@ -1,102 +1,32 @@
 import Image from 'next/image';
 
-import aboutBanner from '../../assets/images/about-banner.jpg';
-import badge1 from '../../assets/images/badge-1.png';
-import event1 from '../../assets/images/event-1.jpg';
-import event2 from '../../assets/images/event-2.jpg';
-import event3 from '../../assets/images/event-3.jpg';
-import featuresIcon1 from '../../assets/images/features-icon-1.png';
-import featuresIcon2 from '../../assets/images/features-icon-2.png';
-import featuresIcon3 from '../../assets/images/features-icon-3.png';
-import featuresIcon4 from '../../assets/images/features-icon-4.png';
-import aboutAbsImage from '../../assets/images/gg.jpg';
-import heroIcon from '../../assets/images/hero-icon.png';
-import heroSlider1 from '../../assets/images/hero-slider-1.jpg';
-import heroSlider2 from '../../assets/images/hero-slider-2.jpg';
-import heroSlider3 from '../../assets/images/hero-slider-3.jpg';
-import menu1 from '../../assets/images/menu-1.png';
-import menu2 from '../../assets/images/menu-2.png';
-import menu3 from '../../assets/images/menu-3.png';
-import menu4 from '../../assets/images/menu-4.png';
-import menu5 from '../../assets/images/menu-5.png';
-import menu6 from '../../assets/images/menu-6.png';
-import service1 from '../../assets/images/service-1.jpg';
-import service2 from '../../assets/images/service-2.jpg';
-import service3 from '../../assets/images/service-3.jpg';
-import shape1 from '../../assets/images/shape-1.png';
-import shape2 from '../../assets/images/shape-2.png';
-import shape3 from '../../assets/images/shape-3.png';
-import shape4 from '../../assets/images/shape-4.png';
-import shape5 from '../../assets/images/shape-5.png';
-import shape6 from '../../assets/images/shape-5.png';
-import shape7 from '../../assets/images/shape-7.png';
-import shape8 from '../../assets/images/shape-8.png';
-import shape9 from '../../assets/images/shape-9.png';
-import specialDishBanner from '../../assets/images/special-dish-banner.jpg';
+import aboutBanner from '../assets/images/about-banner.jpg';
+import badge1 from '../assets/images/badge-1.png';
+import event1 from '../assets/images/event-1.jpg';
+import event2 from '../assets/images/event-2.jpg';
+import event3 from '../assets/images/event-3.jpg';
+import featuresIcon1 from '../assets/images/features-icon-1.png';
+import featuresIcon2 from '../assets/images/features-icon-2.png';
+import featuresIcon3 from '../assets/images/features-icon-3.png';
+import featuresIcon4 from '../assets/images/features-icon-4.png';
+import aboutAbsImage from '../assets/images/gg.jpg';
+import heroIcon from '../assets/images/hero-icon.png';
+import heroSlider1 from '../assets/images/hero-slider-1.jpg';
+import heroSlider2 from '../assets/images/hero-slider-2.jpg';
+import heroSlider3 from '../assets/images/hero-slider-3.jpg';
+import shape3 from '../assets/images/shape-3.png';
+import shape4 from '../assets/images/shape-4.png';
+
+import shape7 from '../assets/images/shape-7.png';
+import shape8 from '../assets/images/shape-8.png';
+import shape9 from '../assets/images/shape-9.png';
+import specialDishBanner from '../assets/images/special-dish-banner.jpg';
+
+// Components
+import Menu from './Menu';
+import Services from './Services';
 
 const Content = () => {
-  const services = [
-    {
-      name: 'Doces',
-      image: service3,
-    },
-    {
-      name: 'Bolos',
-      image: service1,
-    },
-    {
-      name: 'Salgados',
-      image: service2,
-    },
-  ];
-
-  const menu = [
-    {
-      id: 1,
-      name: 'Doces',
-      image: menu1,
-      price: 49.0,
-      description: 'Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.',
-      isSeasonal: true,
-    },
-    {
-      id: 2,
-      name: 'Bolos',
-      image: menu2,
-      price: 39.0,
-      description: 'Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.',
-      isNew: true,
-    },
-    {
-      id: 3,
-      name: 'Salgados',
-      image: menu3,
-      price: 39.0,
-      description: 'Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.',
-    },
-    {
-      id: 4,
-      name: 'Tokusen Wagyu',
-      image: menu4,
-      price: 39.0,
-      description: 'Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.',
-    },
-    {
-      id: 5,
-      name: 'Olivas Rellenas',
-      image: menu5,
-      price: 25.0,
-      description: 'Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.',
-    },
-    {
-      id: 6,
-      name: 'Opu Fish',
-      image: menu6,
-      price: 49.0,
-      description: 'Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices',
-    },
-  ];
-
   return (
     <main>
       <article>
@@ -185,66 +115,10 @@ const Content = () => {
             <span className="label-2 text-center span">Fazer pedido</span>
           </a>
         </section>
-        {/* Service */}
-        <section className="section service bg-black-10 text-center" aria-label="service">
-          <div className="container">
-            <p className="section-subtitle label-2">Sabores para a realeza</p>
 
-            <h2 className="headline-1 section-title">Oferecemos Top Notch</h2>
+        <Services />
+        <Menu />
 
-            <p className="section-text">
-              Aqui, você encontrará uma variedade de delícias feitas com muito amor e carinho.
-            </p>
-
-            <ul className="grid-list">
-              {services.map(service => (
-                <li key={service.name}>
-                  <div className="service-card">
-                    <a href="#" className="has-before hover:shine">
-                      <figure className="card-banner img-holder" style={{ width: 285, height: 336 }}>
-                        <Image
-                          src={service.image}
-                          width="285"
-                          height="336"
-                          loading="lazy"
-                          alt={service.name}
-                          className="img-cover"
-                        />
-                      </figure>
-                    </a>
-
-                    <div className="card-content">
-                      <h3 className="title-4 card-title">
-                        <a href="#">{service.name}</a>
-                      </h3>
-
-                      <a href="#" className="btn-text hover-underline label-2">
-                        VER MENU
-                      </a>
-                    </div>
-                  </div>
-                </li>
-              ))}
-            </ul>
-
-            <Image
-              src={shape1}
-              width="246"
-              height="412"
-              loading="lazy"
-              alt="shape"
-              className="shape shape-1 move-anim"
-            />
-            <Image
-              src={shape2}
-              width="343"
-              height="345"
-              loading="lazy"
-              alt="shape"
-              className="shape shape-2 move-anim"
-            />
-          </div>
-        </section>
         {/* about-me */}
         <section className="section about text-center" aria-labelledby="about-label" id="about">
           <div className="container">
@@ -296,6 +170,7 @@ const Content = () => {
             <Image src={shape3} width="197" height="194" loading="lazy" alt="" className="shape" />
           </div>
         </section>
+
         {/* Prato especial */}
         <section className="special-dish text-center" aria-labelledby="dish-label">
           <div className="special-dish-banner">
@@ -341,74 +216,6 @@ const Content = () => {
 
           <Image src={shape9} width="351" height="462" loading="lazy" alt="" className="shape shape-2" />
         </section>
-        {/* Menu */}
-        <section className="section menu" aria-label="menu-label" id="menu">
-          <div className="container">
-            <p className="section-subtitle text-center label-2">Seleção especial</p>
-
-            <h2 className="headline-1 section-title text-center">Menu</h2>
-
-            <ul className="grid-list">
-              {menu.map(item => (
-                <li key={item.id}>
-                  <div className="menu-card hover:card">
-                    <figure className="card-banner img-holder" style={{ width: 100, height: 100 }}>
-                      <Image
-                        src={item.image}
-                        width="100"
-                        height="100"
-                        loading="lazy"
-                        alt={item.name}
-                        className="img-cover"
-                      />
-                    </figure>
-
-                    <div>
-                      <div className="title-wrapper">
-                        <h3 className="title-3">
-                          <a href="#" className="card-title">
-                            {item.name}
-                          </a>
-                        </h3>
-
-                        {item.isSeasonal && <span className="badge label-1">Seasonal</span>}
-                        {item.isNew && <span className="badge label-1">New</span>}
-
-                        <span className="span title-2">${item.price.toFixed(2)}</span>
-                      </div>
-
-                      <p className="card-text label-1">{item.description}</p>
-                    </div>
-                  </div>
-                </li>
-              ))}
-            </ul>
-
-            <a href="#" className="btn btn-primary">
-              <span className="text text-1">Ver todo menu</span>
-              <span className="text text-2" aria-hidden="true">
-                Ver todo menu
-              </span>
-            </a>
-
-            <Image
-              src={shape5}
-              width="921"
-              height="1036"
-              loading="lazy"
-              alt="shape"
-              className="shape shape-2 move-anim"
-            />
-            <Image
-              src={shape6}
-              width="343"
-              height="345"
-              loading="lazy"
-              alt="shape"
-              className="shape shape-3 move-anim"
-            />
-          </div>
-        </section>
 
         <section className=" testi">
           <div className="container">
@@ -419,6 +226,7 @@ const Content = () => {
             </div>
           </div>
         </section>
+
         {/* Form */}
         <section className="reservation">
           <div className="container">
@@ -506,10 +314,7 @@ const Content = () => {
                 </button>
               </form>
 
-              <div
-                className="form-right text-center"
-                style={{ backgroundImage: "url('./assets/images/form-pattern.png')" }}
-              >
+              <div className="form-right text-center">
                 <h2 className="headline-1 text-center">Contate-nos</h2>
 
                 <p className="contact-label">Faça Um Pedido</p>
