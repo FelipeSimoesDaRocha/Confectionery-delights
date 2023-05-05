@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import service1 from '../assets/images/service-1.jpg';
-import service2 from '../assets/images/service-2.jpg';
+import service2 from '../assets/images/service-2.png';
 import service3 from '../assets/images/service-3.jpg';
 
 import shape1 from '../assets/images/shape-1.png';

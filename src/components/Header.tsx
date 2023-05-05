@@ -1,26 +1,38 @@
+import { useState } from 'react';
+
 const Header = () => {
-  const items = [
+  const [items, setItems] = useState([
     {
+      id: 1,
       title: 'Home',
-      active: 'active',
-      href: '#home',
+      active: true,
+      href: '#Home',
     },
     {
+      id: 2,
       title: 'Menu',
-      active: '',
+      active: false,
       href: '#menu',
     },
     {
+      id: 3,
       title: 'Sobre',
-      active: '',
+      active: false,
       href: '#about',
     },
     {
+      id: 4,
       title: 'Contato',
-      active: '',
+      active: false,
       href: '#Contact',
     },
-  ];
+  ]);
+
+  function handleItemClick(id: number) {
+    setItems(prevItems =>
+      prevItems.map(item => (item.id === id ? { ...item, active: true } : { ...item, active: false }))
+    );
+  }
 
   return (
     <div id="top">
@@ -65,7 +77,11 @@ const Header = () => {
             <ul className="navbar-list">
               {items.map((item, index) => (
                 <li className="navbar-item" key={index}>
-                  <a href={item.href} className={`navbar-link hover-underline ${item.active ? 'active' : ''}`}>
+                  <a
+                    href={item.href}
+                    className={`navbar-link hover-underline ${item.active ? 'active' : ''}`}
+                    onClick={() => handleItemClick(item.id)}
+                  >
                     <div className="separator"></div>
                     <span className="span">{item.title}</span>
                   </a>

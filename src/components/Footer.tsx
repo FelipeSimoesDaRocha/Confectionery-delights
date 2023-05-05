@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="footer section has-bg-image text-center">
+    <div className="footer section has-bg-image text-center" id="Contact">
       <div className="container">
         <div className="footer-top grid-list">
           <div className="footer-brand has-before has-after">
@@ -49,6 +49,7 @@ const Footer = () => {
                 </span>
               </button>
             </form>
+            
           </div>
 
           <ul className="footer-list">
