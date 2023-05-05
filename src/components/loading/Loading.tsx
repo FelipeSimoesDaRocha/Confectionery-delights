@@ -1,25 +1,21 @@
 import { useEffect } from 'react';
-
-import * as S from './Loading.styles';
+import './styles.module.css';
 
 const Loading = () => {
   useEffect(() => {
     const preloader: Element | null = document.querySelector('[data-preaload]');
-    
+
     if (preloader) {
       preloader.classList.add('loaded');
     }
     document.body.classList.add('loaded');
   }, []);
 
-
   return (
-    <S.Component>
-      <div className="preload" data-preaload>
-        <div className="circle"></div>
-        <p className="text">Confeitaria</p>
-      </div>
-    </S.Component>
+    <div className="preload" data-preaload>
+      <div className="circle"></div>
+      <p className="text">Confeitaria</p>
+    </div>
   );
 };
 

@@ -25,7 +25,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "@typescript-eslint", "import-helpers"],
+  "plugins": ["react", "react-hooks", "@typescript-eslint"],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
@@ -33,25 +33,6 @@
 
     "react/prop-types": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-empty-function": "off",
-    "import-helpers/order-imports": [
-      "error",
-      {
-        "groups": [
-          ["/^next/", "/@next/"],
-          ["/^react/", "/react-query/"],
-          "/^public/",
-          "/images/",
-          "/styles/",
-          "/models/",
-          "/^modules/",
-          "/^components/",
-          "/^hooks/",
-          ["parent", "index", "sibling"]
-        ],
-        "newlinesBetween": "always",
-        "alphabetize": { "order": "asc", "ignoreCase": true }
-      }
-    ]
+    "@typescript-eslint/no-empty-function": "off"
   }
 }

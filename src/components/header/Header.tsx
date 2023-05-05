@@ -1,12 +1,29 @@
-import Image from 'next/image';
-
-import logo from '../../assets/images/logo.svg';
-
-import * as S from './Header.styles';
-
 const Header = () => {
+  const items = [
+    {
+      title: 'Home',
+      active: 'active',
+      href: '#home',
+    },
+    {
+      title: 'Menus',
+      active: '',
+      href: '#menu',
+    },
+    {
+      title: 'Sobre',
+      active: '',
+      href: '#about',
+    },
+    {
+      title: 'Contato',
+      active: '',
+      href: '#Contact',
+    },
+  ];
+
   return (
-    <S.Container id="top">
+    <div id="top">
       <div className="topbar">
         <div className="container">
           <address className="topbar-item">
@@ -40,57 +57,20 @@ const Header = () => {
 
       <header className="header" data-header>
         <div className="container">
-          <a href="#" className="logo"></a>
-
           <nav className="navbar" data-navbar>
             <button className="close-btn" aria-label="close menu" data-nav-toggler>
               {/* <ion-icon name="close-outline" aria-hidden="true"></ion-icon> */}
             </button>
 
-            <a href="#" className="logo">
-              <Image src={logo} width="160" height="50" alt="logo - Home" />
-            </a>
-
             <ul className="navbar-list">
-              <li className="navbar-item">
-                <a href="#home" className="navbar-link hover-underline active">
-                  <div className="separator"></div>
-
-                  <span className="span">Home</span>
-                </a>
-              </li>
-
-              <li className="navbar-item">
-                <a href="#menu" className="navbar-link hover-underline">
-                  <div className="separator"></div>
-
-                  <span className="span">Menus</span>
-                </a>
-              </li>
-
-              <li className="navbar-item">
-                <a href="#about" className="navbar-link hover-underline">
-                  <div className="separator"></div>
-
-                  <span className="span">About Us</span>
-                </a>
-              </li>
-
-              <li className="navbar-item">
-                <a href="#" className="navbar-link hover-underline">
-                  <div className="separator"></div>
-
-                  <span className="span">Our Chefs</span>
-                </a>
-              </li>
-
-              <li className="navbar-item">
-                <a href="#" className="navbar-link hover-underline">
-                  <div className="separator"></div>
-
-                  <span className="span">Contact</span>
-                </a>
-              </li>
+              {items.map((item, index) => (
+                <li className="navbar-item" key={index}>
+                  <a href={item.href} className={`navbar-link hover-underline ${item.active ? 'active' : ''}`}>
+                    <div className="separator"></div>
+                    <span className="span">{item.title}</span>
+                  </a>
+                </li>
+              ))}
             </ul>
 
             <div className="text-center">
@@ -134,7 +114,7 @@ const Header = () => {
           <div className="overlay" data-nav-toggler data-overlay></div>
         </div>
       </header>
-    </S.Container>
+    </div>
   );
 };
 

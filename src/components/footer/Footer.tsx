@@ -1,20 +1,11 @@
-import Image from 'next/image';
-
 import img from '../../assets/images/footer-bg.jpg';
-import logo from '../../assets/images/logo.svg';
-
-import * as S from './Footer.styles';
 
 const Footer = () => {
   return (
-    <S.Footer className="footer section has-bg-image text-center" style={{ backgroundImage: `url(${img})` }}>
+    <div className="footer section has-bg-image text-center" style={{ backgroundImage: `url(${img})` }}>
       <div className="container">
         <div className="footer-top grid-list">
           <div className="footer-brand has-before has-after">
-            {/* <a href="#" className="logo">
-              <Image src={logo} width="160" height="50" loading="lazy" alt="grilli home" />
-            </a> */}
-
             <address className="body-4">Rua george fridrich mordhorst, 210</address>
 
             <a href="mailto:deliciasDaConfeitaria@gmail.com" className="body-4 contact-link">
@@ -119,7 +110,7 @@ const Footer = () => {
           <p className="copyright">&copy; 2022 Delicias Da Confeitaria. Todos os direitos reservados</p>
         </div>
       </div>
-    </S.Footer>
+    </div>
   );
 };
 

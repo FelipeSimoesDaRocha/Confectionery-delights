@@ -3,7 +3,8 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 
 // Styles
-import GlobalStyle from '../styles/globals';
+import '../styles/globals.css';
+import '../../public/font/font.css';
 
 import { Loading } from 'components/loading';
 
@@ -55,7 +56,6 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
       <Loading />
       <Component {...pageProps} />;
-      <GlobalStyle />
     </>
   );
 }

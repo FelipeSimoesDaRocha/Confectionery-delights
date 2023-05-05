@@ -1,6 +1,3 @@
-import styled from 'styled-components';
-
-export const Component = styled.div`
   .preload {
     position: fixed;
     top: 0;
@@ -71,4 +68,3 @@ export const Component = styled.div`
       background-position: 0%;
     }
   }
-`;
