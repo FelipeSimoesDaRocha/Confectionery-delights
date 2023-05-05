@@ -1,11 +1,20 @@
 // Next
 import { NextPage } from 'next';
+import { Fragment } from 'react';
 
-// Modules
-import { HomeScreen } from 'modules/screen/home';
+// Components
+import { Content } from 'components/content';
+import { Footer } from 'components/footer';
+import { Header } from 'components/header';
 
 const Home: NextPage = () => {
-  return <HomeScreen />;
+  return (
+    <Fragment>
+      <Header />
+      <Content />
+      <Footer />
+    </Fragment>
+  );
 };
 
 export default Home;

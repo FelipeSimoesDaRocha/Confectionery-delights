@@ -4,6 +4,7 @@ import Head from 'next/head';
 
 // Styles
 import '../styles/globals.css';
+
 import '../../public/font/font.css';
 
 import { Loading } from 'components/loading';
