@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Header = () => {
+  const [navbar, setNavBar] = useState(false);
+
   const [items, setItems] = useState([
     {
       id: 1,
@@ -33,6 +35,14 @@ const Header = () => {
       prevItems.map(item => (item.id === id ? { ...item, active: true } : { ...item, active: false }))
     );
   }
+
+  const handleChangeBackground = () => {
+    setNavBar(window.scrollY >= 150);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleChangeBackground);
+  }, []);
 
   return (
     <div id="top">
@@ -67,7 +77,7 @@ const Header = () => {
         </div>
       </div>
 
-      <header className="header" data-header>
+      <header className={navbar ? `${'header active'}` : 'header'} data-header>
         <div className="container">
           <nav className="navbar" data-navbar>
             <button className="close-btn" aria-label="close menu" data-nav-toggler>
