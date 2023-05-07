@@ -8,7 +8,7 @@ const Reservation = () => {
 
             <p className="form-text text-center">
               Pedido de reserva
-              <a href="tel:+554791075411" className="link">
+              <a href="https://contate.me/delicias_da_confeitaria" className="link">
                 +55 47 9107-5411
               </a>
               ou preencha o formulário de encomenda
@@ -91,7 +91,7 @@ const Reservation = () => {
 
             <p className="contact-label">Faça Um Pedido</p>
 
-            <a href="tel:+554791075411" className="body-1 contact-number hover-underline">
+            <a href="https://contate.me/delicias_da_confeitaria" className="body-1 contact-number hover-underline">
               +55 47 9107-5411
             </a>
 

@@ -23,7 +23,7 @@ const About = () => {
 
           <div className="contact-label">Reserve por chamada</div>
 
-          <a href="tel:+554791075411" className="body-1 contact-number hover-underline">
+          <a href="https://contate.me/delicias_da_confeitaria" className="body-1 contact-number hover-underline">
             +55 47 9107-5411
           </a>
 

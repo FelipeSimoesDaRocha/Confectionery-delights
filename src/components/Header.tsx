@@ -61,7 +61,7 @@ const Header = () => {
             <span className="span">Aberto : 8.00 am 10.00 pm</span>
           </div>
 
-          <a href="tel:+11234567890" className="topbar-item link">
+          <a href="https://contate.me/delicias_da_confeitaria" className="topbar-item link">
             <div className="icon">{/* <ion-icon name="call-outline" aria-hidden="true"></ion-icon> */}</div>
 
             <span className="span">+55 47 9107-5411</span>
@@ -117,7 +117,7 @@ const Header = () => {
 
               <p className="contact-label">Booking Request</p>
 
-              <a href="tel:+554791075411" className="body-1 contact-number hover-underline">
+              <a href="https://contate.me/delicias_da_confeitaria" className="body-1 contact-number hover-underline">
                 +55 47 9107-5411
               </a>
             </div>

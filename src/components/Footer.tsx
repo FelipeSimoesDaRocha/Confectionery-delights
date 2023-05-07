@@ -10,7 +10,7 @@ const Footer = () => {
               deliciasDaConfeitaria@gmail.com
             </a>
 
-            <a href="tel:+554791075411" className="body-4 contact-link">
+            <a href="https://contate.me/delicias_da_confeitaria" className="body-4 contact-link">
               Fazer pedido : +55 47 9107-5411
             </a>
 
