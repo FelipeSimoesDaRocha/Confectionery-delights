@@ -49,7 +49,7 @@ const Footer = () => {
                 </span>
               </button>
             </form>
-            
+
           </div>
 
           <ul className="footer-list">
