@@ -1,7 +1,12 @@
+import Image from 'next/image';
+
+import shape8 from '../assets/images/shape-8.png';
+
 const Reservation = () => {
   return (
-    <section className="reservation">
+    <section className="reservation" id='reservation'>
       <div className="container">
+
         <div className="form reservation-form bg-black-10">
           <form action="" className="form-left">
             <h2 className="headline-1 text-center">Pedido on-line</h2>
@@ -111,7 +116,11 @@ const Reservation = () => {
               das 08h00 às 22h00
             </p>
           </div>
+
+
         </div>
+
+        <Image src={shape8} width="120" height="115" loading="lazy" alt="shape" className="shape shape-2" />
       </div>
     </section>
   );

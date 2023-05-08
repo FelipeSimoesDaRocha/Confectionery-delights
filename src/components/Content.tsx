@@ -5,7 +5,6 @@ import Menu from './Menu';
 import About from './About';
 import SpecialDish from './SpecialDish';
 import Reservation from './Reservation';
-import Features from './Features';
 
 const Content = () => {
   return (
@@ -26,7 +25,6 @@ const Content = () => {
           </div>
         </section>
         <Reservation />
-        <Features />
       </article>
     </main>
   );

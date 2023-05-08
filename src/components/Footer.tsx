@@ -49,30 +49,23 @@ const Footer = () => {
                 </span>
               </button>
             </form>
-
           </div>
 
           <ul className="footer-list">
             <li>
-              <a href="#" className="label-2 footer-link hover-underline">
-                Home
-              </a>
-            </li>
-
-            <li>
-              <a href="#" className="label-2 footer-link hover-underline">
+              <a href="#menu" className="label-2 footer-link hover-underline">
                 Menu
               </a>
             </li>
 
             <li>
-              <a href="#" className="label-2 footer-link hover-underline">
+              <a href="#about" className="label-2 footer-link hover-underline">
                 Chefs
               </a>
             </li>
 
             <li>
-              <a href="#" className="label-2 footer-link hover-underline">
+              <a href="#reservation" className="label-2 footer-link hover-underline">
                 Contato
               </a>
             </li>
@@ -80,25 +73,19 @@ const Footer = () => {
 
           <ul className="footer-list">
             <li>
-              <a href="#" className="label-2 footer-link hover-underline">
+              <a href="https://www.facebook.com/margarete.santos.5817" className="label-2 footer-link hover-underline" target="blank">
                 Facebook
               </a>
             </li>
 
             <li>
-              <a href="#" className="label-2 footer-link hover-underline">
+              <a href="#" className="label-2 footer-link hover-underline" target="blank">
                 Instagram
               </a>
             </li>
 
             <li>
-              <a href="#" className="label-2 footer-link hover-underline">
-                Youtube
-              </a>
-            </li>
-
-            <li>
-              <a href="#" className="label-2 footer-link hover-underline">
+              <a href="https://www.google.com/maps/place/R.+George+Fridrich+Mordhorst,+210+-+Itoupava+Central,+Blumenau+-+SC,+89062-220/data=!4m2!3m1!1s0x94dee1d387fd50b1:0xcb18a17a2ccef417?sa=X&ved=2ahUKEwi-z-fr2OT-AhXCrpUCHRYvDcYQ8gF6BAgNEAI" className="label-2 footer-link hover-underline" target="blank">
                 MAPA DO GOOGLE
               </a>
             </li>

@@ -48,7 +48,6 @@ const SpecialDish = () => {
       </div>
 
       <Image src={shape4} width="179" height="359" loading="lazy" alt="" className="shape shape-1" />
-
       <Image src={shape9} width="351" height="462" loading="lazy" alt="" className="shape shape-2" />
     </section>
   );
