@@ -32,10 +32,10 @@ const SpecialDish = () => {
             vai sobrar nada, e ainda vão repetir para você repetir a dose em outra oportunidade.
           </p>
 
-          <div className="wrapper">
+          {/* <div className="wrapper">
             <del className="del body-3">$60.00</del>
             <span className="span body-1">$40.00</span>
-          </div>
+          </div> */}
 
           <a href="#" className="btn btn-primary">
             <span className="text text-1">Ver todos menu</span>

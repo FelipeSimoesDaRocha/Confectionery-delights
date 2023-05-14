@@ -25,7 +25,6 @@ const Footer = () => {
             <p className="title-1">Receba notícias e ofertas</p>
 
             <p className="label-1">
-              Inscreva-se e ganhe <span className="span">25% de desconto.</span>
             </p>
 
             <form action="" className="input-wrapper">
@@ -52,43 +51,57 @@ const Footer = () => {
           </div>
 
           <ul className="footer-list">
-            <li>
-              <a href="#menu" className="label-2 footer-link hover-underline">
-                Menu
-              </a>
-            </li>
-
-            <li>
-              <a href="#about" className="label-2 footer-link hover-underline">
-                Chefs
-              </a>
-            </li>
-
-            <li>
-              <a href="#reservation" className="label-2 footer-link hover-underline">
-                Contato
-              </a>
-            </li>
+            {[
+              {
+                href: "#menu",
+                label: "Menu"
+              },
+              {
+                href: "#about",
+                label: "Chefs"
+              },
+              {
+                href: "#reservation",
+                label: "Contato"
+              }
+            ].map((item, index) => (
+              <li key={index}>
+                <a href={item.href} className="label-2 footer-link hover-underline">
+                  {item.label}
+                </a>
+              </li>
+            ))}
           </ul>
 
           <ul className="footer-list">
-            <li>
-              <a href="https://www.facebook.com/margarete.santos.5817" className="label-2 footer-link hover-underline" target="blank">
-                Facebook
-              </a>
-            </li>
-
-            <li>
-              <a href="#" className="label-2 footer-link hover-underline" target="blank">
-                Instagram
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.google.com/maps/place/R.+George+Fridrich+Mordhorst,+210+-+Itoupava+Central,+Blumenau+-+SC,+89062-220/data=!4m2!3m1!1s0x94dee1d387fd50b1:0xcb18a17a2ccef417?sa=X&ved=2ahUKEwi-z-fr2OT-AhXCrpUCHRYvDcYQ8gF6BAgNEAI" className="label-2 footer-link hover-underline" target="blank">
-                MAPA DO GOOGLE
-              </a>
-            </li>
+            {[
+              {
+                href: "https://www.facebook.com/margarete.santos.5817",
+                label: "Facebook",
+                target: "_blank"
+              },
+              {
+                href: "#",
+                label: "Instagram",
+                target: "_blank"
+              },
+              {
+                href:
+                  "https://www.google.com/maps/place/R.+George+Fridrich+Mordhorst,+210+-+Itoupava+Central,+Blumenau+-+SC,+89062-220/data=!4m2!3m1!1s0x94dee1d387fd50b1:0xcb18a17a2ccef417?sa=X&ved=2ahUKEwi-z-fr2OT-AhXCrpUCHRYvDcYQ8gF6BAgNEAI",
+                label: "MAPA DO GOOGLE",
+                target: "_blank"
+              }
+            ].map((item, index) => (
+              <li key={index}>
+                <a
+                  href={item.href}
+                  className="label-2 footer-link hover-underline"
+                  target={item.target}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 

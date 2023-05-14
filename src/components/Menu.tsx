@@ -21,7 +21,7 @@ const Menu = () => {
       image: menu1,
       price: 0,
       description: 'Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.',
-      isSeasonal: true,
+      isSeasonal: false,
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ const Menu = () => {
       image: menu2,
       price: 0,
       description: 'Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.',
-      isNew: true,
+      isNew: false,
     },
     {
       id: 3,
