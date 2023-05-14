@@ -20,13 +20,13 @@ const Home = () => {
       id: 2,
       imgSrc: heroSlider2,
       title: 'Delicias Da\nConfeitaria',
-      subtitle: 'Come with family & feel the joy of mouthwatering food',
+      subtitle: 'Doces, Bolos e Salgados',
     },
     {
       id: 3,
       imgSrc: heroSlider3,
       title: 'Delicias Da\nConfeitaria',
-      subtitle: 'Come with family & feel the joy of mouthwatering food',
+      subtitle: 'Doces, Bolos e Salgados',
     },
   ];
 
@@ -47,7 +47,7 @@ const Home = () => {
 
             <p className="body-2 hero-text slider-reveal">{item.subtitle}</p>
 
-            <a href="#" className="btn btn-primary slider-reveal">
+            <a href="#menu" className="btn btn-primary slider-reveal">
               <span className="text text-1">Confira o cardápio</span>
 
               <span className="text text-2" aria-hidden="true">
@@ -76,7 +76,7 @@ const Home = () => {
         <p style={{ transform: 'translateY(5%) rotate(320deg)' }}>&#x3e;</p>
       </button>
 
-      <a href="#" className="hero-btn has-after">
+      <a href="https://contate.me/delicias_da_confeitaria" className="hero-btn has-after">
         <Image src={heroIcon} width="48" height="48" alt="booking icon" />
         <span className="label-2 text-center span">Fazer pedido</span>
       </a>
