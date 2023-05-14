@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 import heroIcon from '../assets/images/hero-icon.png';
-import heroSlider1 from '../assets/images/hero-slider-1.jpg';
+import heroSlider1 from '../assets/images/download.jpeg';
 import heroSlider2 from '../assets/images/hero-slider-2.jpg';
 import heroSlider3 from '../assets/images/hero-slider-3.jpg';
 
@@ -43,9 +43,23 @@ const Home = () => {
               <Image src={item.imgSrc} width="1880" height="950" alt="" className="img-cover" />
             </div>
 
-            <h1 className="display-1 hero-title slider-reveal">{item.title}</h1>
+            <h1
+              className="display-1 hero-title slider-reveal"
+              style={{
+                textShadow: '1px 2px #3e3e3e',
+              }}
+            >
+              {item.title}
+            </h1>
 
-            <p className="body-2 hero-text slider-reveal">{item.subtitle}</p>
+            <p
+              className="body-2 hero-text slider-reveal"
+              style={{
+                textShadow: '1px 1px #3e3e3e',
+              }}
+            >
+              {item.subtitle}
+            </p>
 
             <a href="#menu" className="btn btn-primary slider-reveal">
               <span className="text text-1">Confira o cardápio</span>
